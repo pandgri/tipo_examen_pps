@@ -1,0 +1,10 @@
+# version: "3.1"
+
+services:
+  fastapi:
+    container_name: fastapi
+    # Debe ser el name usado en el action de GH
+    image: pandgri859/fastapi:latest
+    ports:
+      - 80:8000
+    restart: always
